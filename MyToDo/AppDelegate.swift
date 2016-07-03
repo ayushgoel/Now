@@ -27,6 +27,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
   var isSelected: Bool = false
 
+  let dataSaver: DataSaver = {
+    return DataSaver()
+  }()
+
   func applicationDidFinishLaunching(aNotification: NSNotification) {
     statusItem.button?.target = self
     statusItem.button?.action = #selector(itemClicked)

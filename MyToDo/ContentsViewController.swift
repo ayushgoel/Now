@@ -9,12 +9,17 @@
 import Cocoa
 
 class ContentsViewController: NSViewController {
-  let data = ["asd", "asd2", "asd3", "asd4", "asd5"]
+  var tasks: [TaskData] {
+    guard let allTasks = dataSaver.allTasks() else {
+      return []
+    }
+    return allTasks
+  }
 }
 
 extension ContentsViewController: NSTableViewDataSource {
   func numberOfRowsInTableView(tableView: NSTableView) -> Int {
-    return 5
+    return tasks.count
   }
 }
 
@@ -24,8 +29,8 @@ extension ContentsViewController: NSTableViewDelegate {
       assertionFailure()
       return nil
     }
-    view.taskName = data[row]
-    view.time = "20"
+    view.taskName = tasks[row].taskString
+    view.time = "\(tasks[row].time)"
     return view
   }
 }
