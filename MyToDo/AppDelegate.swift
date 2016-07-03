@@ -47,7 +47,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     } else {
       popover.performClose(sender)
     }
-    print("Item clicked")
   }
-}
 
+}
