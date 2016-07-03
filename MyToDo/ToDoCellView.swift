@@ -9,8 +9,8 @@
 import Cocoa
 
 class ToDoCellView: NSTableCellView {
-  @IBOutlet private var taskNameLabel: NSTextField!
-  @IBOutlet private var timeLabel: NSTextField!
+  @IBOutlet private weak var taskNameLabel: NSTextField!
+  @IBOutlet private weak var timeLabel: NSTextField!
 
   var taskName: String {
     get {
