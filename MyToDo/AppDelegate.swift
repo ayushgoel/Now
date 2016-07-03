@@ -11,29 +11,28 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-  var statusItem: NSStatusItem?
+  let statusItem: NSStatusItem = {
+    let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
+    statusItem.button?.image = NSImage(named: "todo-icon")
+    statusItem.button?.alternateImage = NSImage(named: "todo-icon-on")
+    statusItem.button?.setButtonType(.ToggleButton)
+    return statusItem
+  }()
+
+  var isSelected: Bool = false
 
   func applicationDidFinishLaunching(aNotification: NSNotification) {
-    // Insert code here to initialize your application
-    statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
-    statusItem?.button?.image = NSImage(named: "todo-icon")
-    statusItem?.menu = ({
-      let menu = NSMenu(title: "Menu Title")
-      let infoMenuItem = NSMenuItem(title: "Todo's", action: #selector(itemClicked), keyEquivalent: "itemClicked")
-      infoMenuItem.enabled = true
-      menu.addItem(infoMenuItem)
-      return menu
-    })()
-
+    statusItem.button?.target = self
+    statusItem.button?.action = #selector(itemClicked)
   }
 
   func applicationWillTerminate(aNotification: NSNotification) {
     // Insert code here to tear down your application
   }
 
-  func itemClicked() {
+  func itemClicked(sender: NSStatusBarButton) {
+    isSelected = !isSelected
     print("Item clicked")
   }
-
 }
 
