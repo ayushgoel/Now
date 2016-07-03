@@ -15,6 +15,10 @@ class ContentsViewController: NSViewController {
     }
     return allTasks
   }
+
+  @IBAction func quitButtonClicked(sender: NSButton) {
+    NSApplication.sharedApplication().terminate(sender)
+  }
 }
 
 extension ContentsViewController: NSTableViewDataSource {

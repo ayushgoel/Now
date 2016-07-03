@@ -110,8 +110,26 @@
                 </scrollView>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="zJy-NM-Hes">
                     <rect key="frame" x="0.0" y="300" width="280" height="50"/>
+                    <subviews>
+                        <button translatesAutoresizingMaskIntoConstraints="NO" id="opY-fT-1ji">
+                            <rect key="frame" x="10" y="15" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="4wj-CG-K4F"/>
+                                <constraint firstAttribute="height" constant="20" id="Twe-ZT-l3d"/>
+                            </constraints>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="quit" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="hqF-MP-Vds">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="quitButtonClicked:" target="-2" id="M5E-xx-8aE"/>
+                            </connections>
+                        </button>
+                    </subviews>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="8ym-Ac-3lG"/>
+                        <constraint firstItem="opY-fT-1ji" firstAttribute="leading" secondItem="zJy-NM-Hes" secondAttribute="leading" constant="10" id="Fe6-wz-sk2"/>
+                        <constraint firstItem="opY-fT-1ji" firstAttribute="centerY" secondItem="zJy-NM-Hes" secondAttribute="centerY" id="fPi-yI-GoD"/>
                     </constraints>
                 </customView>
             </subviews>
@@ -126,4 +144,7 @@
             </constraints>
         </customView>
     </objects>
+    <resources>
+        <image name="quit" width="204.80000305175781" height="204.80000305175781"/>
+    </resources>
 </document>
