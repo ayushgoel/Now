@@ -383,6 +383,7 @@
 				8E009B701D1BFAC7009EDB78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E009B711D1BFAC7009EDB78 /* Build configuration list for PBXNativeTarget "MyToDoTests" */ = {
 			isa = XCConfigurationList;
@@ -391,6 +392,7 @@
 				8E009B731D1BFAC7009EDB78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
