@@ -15,6 +15,103 @@
         <customView id="Hz6-mo-xeY">
             <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="29" horizontalPageScroll="10" verticalLineScroll="29" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="TPh-mv-aiR">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                    <clipView key="contentView" id="N4T-2a-2OH">
+                        <rect key="frame" x="0.0" y="23" width="480" height="249"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="firstColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="27" rowSizeStyle="automatic" headerView="qLX-vu-y1y" viewBased="YES" id="CRp-Hq-tQe">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="249"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <size key="intercellSpacing" width="3" height="2"/>
+                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <tableColumns>
+                                    <tableColumn identifier="" width="200" minWidth="10" maxWidth="3.4028234663852886e+38" id="VR6-Lm-OZE">
+                                        <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableHeaderCell>
+                                        <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="UoC-iI-TkN">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                        <prototypeCellViews>
+                                            <tableCellView identifier="ToDoCell" id="6Si-be-xwS" customClass="ToDoCellView" customModule="MyToDo" customModuleProvider="target">
+                                                <rect key="frame" x="1" y="1" width="200" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="B99-HM-iP7" userLabel="Task Label">
+                                                        <rect key="frame" x="3" y="5" width="156" height="17"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="nmU-XT-pTp">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hAb-M0-yeq" userLabel="Timer Label">
+                                                        <rect key="frame" x="160" y="5" width="37" height="17"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="33" id="oWa-a8-RvN"/>
+                                                        </constraints>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="t0v-qa-1u8">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="hAb-M0-yeq" secondAttribute="bottom" constant="5" id="181-Ra-0Rv"/>
+                                                    <constraint firstItem="B99-HM-iP7" firstAttribute="top" secondItem="6Si-be-xwS" secondAttribute="top" constant="5" id="3el-0M-stq"/>
+                                                    <constraint firstItem="hAb-M0-yeq" firstAttribute="leading" secondItem="B99-HM-iP7" secondAttribute="trailing" constant="5" id="6w8-JD-sZW"/>
+                                                    <constraint firstItem="hAb-M0-yeq" firstAttribute="leading" secondItem="B99-HM-iP7" secondAttribute="trailing" constant="5" id="JWV-02-ugW"/>
+                                                    <constraint firstItem="hAb-M0-yeq" firstAttribute="top" secondItem="6Si-be-xwS" secondAttribute="top" constant="5" id="JiE-re-uap"/>
+                                                    <constraint firstAttribute="bottom" secondItem="B99-HM-iP7" secondAttribute="bottom" constant="5" id="Kwm-wI-Kl4"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hAb-M0-yeq" secondAttribute="trailing" constant="5" id="UdR-9D-2Ri"/>
+                                                    <constraint firstItem="B99-HM-iP7" firstAttribute="leading" secondItem="6Si-be-xwS" secondAttribute="leading" constant="5" id="cKS-IF-l4p"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="taskNameLabel" destination="B99-HM-iP7" id="sdW-eL-8Mk"/>
+                                                    <outlet property="timeLabel" destination="hAb-M0-yeq" id="Smp-DY-eEf"/>
+                                                </connections>
+                                            </tableCellView>
+                                        </prototypeCellViews>
+                                    </tableColumn>
+                                </tableColumns>
+                                <connections>
+                                    <outlet property="dataSource" destination="-2" id="pHy-AS-J8K"/>
+                                    <outlet property="delegate" destination="-2" id="6zo-0X-jOa"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="ZHB-O5-kDO">
+                        <rect key="frame" x="-100" y="-100" width="223" height="15"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="E7q-Ha-mzr">
+                        <rect key="frame" x="224" y="17" width="15" height="102"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <tableHeaderView key="headerView" id="qLX-vu-y1y">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="23"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tableHeaderView>
+                </scrollView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="TPh-mv-aiR" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="9an-wx-t7R"/>
+                <constraint firstAttribute="trailing" secondItem="TPh-mv-aiR" secondAttribute="trailing" id="KbV-n3-8M0"/>
+                <constraint firstAttribute="bottom" secondItem="TPh-mv-aiR" secondAttribute="bottom" id="U7s-VE-WKI"/>
+                <constraint firstItem="TPh-mv-aiR" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="wa8-n9-uZX"/>
+            </constraints>
         </customView>
     </objects>
 </document>

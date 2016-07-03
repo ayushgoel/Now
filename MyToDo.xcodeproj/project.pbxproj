@@ -13,6 +13,7 @@
 		8E009B6A1D1BFAC7009EDB78 /* MyToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E009B691D1BFAC7009EDB78 /* MyToDoTests.swift */; };
 		8E384C5D1D2953B200F96DDE /* ContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E384C5B1D2953B200F96DDE /* ContentsViewController.swift */; };
 		8E384C5E1D2953B200F96DDE /* ContentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E384C5C1D2953B200F96DDE /* ContentsViewController.xib */; };
+		8E384C601D29634800F96DDE /* ToDoCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E384C5F1D29634800F96DDE /* ToDoCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		8E009B6B1D1BFAC7009EDB78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E384C5B1D2953B200F96DDE /* ContentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsViewController.swift; sourceTree = "<group>"; };
 		8E384C5C1D2953B200F96DDE /* ContentsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentsViewController.xib; sourceTree = "<group>"; };
+		8E384C5F1D29634800F96DDE /* ToDoCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				8E009B5D1D1BFAC7009EDB78 /* MainMenu.xib */,
 				8E384C5B1D2953B200F96DDE /* ContentsViewController.swift */,
 				8E384C5C1D2953B200F96DDE /* ContentsViewController.xib */,
+				8E384C5F1D29634800F96DDE /* ToDoCellView.swift */,
 				8E009B601D1BFAC7009EDB78 /* Info.plist */,
 			);
 			path = MyToDo;
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E384C601D29634800F96DDE /* ToDoCellView.swift in Sources */,
 				8E384C5D1D2953B200F96DDE /* ContentsViewController.swift in Sources */,
 				8E009B5A1D1BFAC7009EDB78 /* AppDelegate.swift in Sources */,
 			);
