@@ -11,6 +11,12 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+  let popover: NSPopover = {
+    let po = NSPopover()
+    po.contentViewController = ContentsViewController()
+    return po
+  }()
+
   let statusItem: NSStatusItem = {
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
     statusItem.button?.image = NSImage(named: "todo-icon")
@@ -32,6 +38,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
   func itemClicked(sender: NSStatusBarButton) {
     isSelected = !isSelected
+    if isSelected {
+      popover.showRelativeToRect(NSRect(), ofView: sender, preferredEdge: .MaxY)
+    } else {
+      popover.performClose(sender)
+    }
     print("Item clicked")
   }
 }

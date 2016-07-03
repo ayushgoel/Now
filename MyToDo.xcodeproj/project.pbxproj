@@ -11,6 +11,8 @@
 		8E009B5C1D1BFAC7009EDB78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E009B5B1D1BFAC7009EDB78 /* Assets.xcassets */; };
 		8E009B5F1D1BFAC7009EDB78 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E009B5D1D1BFAC7009EDB78 /* MainMenu.xib */; };
 		8E009B6A1D1BFAC7009EDB78 /* MyToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E009B691D1BFAC7009EDB78 /* MyToDoTests.swift */; };
+		8E384C5D1D2953B200F96DDE /* ContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E384C5B1D2953B200F96DDE /* ContentsViewController.swift */; };
+		8E384C5E1D2953B200F96DDE /* ContentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E384C5C1D2953B200F96DDE /* ContentsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 		8E009B651D1BFAC7009EDB78 /* MyToDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyToDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E009B691D1BFAC7009EDB78 /* MyToDoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyToDoTests.swift; sourceTree = "<group>"; };
 		8E009B6B1D1BFAC7009EDB78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E384C5B1D2953B200F96DDE /* ContentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsViewController.swift; sourceTree = "<group>"; };
+		8E384C5C1D2953B200F96DDE /* ContentsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 				8E009B591D1BFAC7009EDB78 /* AppDelegate.swift */,
 				8E009B5B1D1BFAC7009EDB78 /* Assets.xcassets */,
 				8E009B5D1D1BFAC7009EDB78 /* MainMenu.xib */,
+				8E384C5B1D2953B200F96DDE /* ContentsViewController.swift */,
+				8E384C5C1D2953B200F96DDE /* ContentsViewController.xib */,
 				8E009B601D1BFAC7009EDB78 /* Info.plist */,
 			);
 			path = MyToDo;
@@ -171,6 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E384C5E1D2953B200F96DDE /* ContentsViewController.xib in Resources */,
 				8E009B5C1D1BFAC7009EDB78 /* Assets.xcassets in Resources */,
 				8E009B5F1D1BFAC7009EDB78 /* MainMenu.xib in Resources */,
 			);
@@ -190,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E384C5D1D2953B200F96DDE /* ContentsViewController.swift in Sources */,
 				8E009B5A1D1BFAC7009EDB78 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
