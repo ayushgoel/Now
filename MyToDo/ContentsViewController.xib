@@ -13,23 +13,23 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <rect key="frame" x="0.0" y="0.0" width="280" height="420"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="29" horizontalPageScroll="10" verticalLineScroll="29" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="TPh-mv-aiR">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                    <rect key="frame" x="0.0" y="0.0" width="280" height="420"/>
                     <clipView key="contentView" id="N4T-2a-2OH">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="420"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="firstColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="27" rowSizeStyle="automatic" viewBased="YES" id="CRp-Hq-tQe">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="420"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <size key="intercellSpacing" width="3" height="2"/>
                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                 <tableColumns>
-                                    <tableColumn identifier="" width="477" minWidth="10" maxWidth="3.4028234663852886e+38" id="VR6-Lm-OZE">
+                                    <tableColumn identifier="" width="277" minWidth="10" maxWidth="3.4028234663852886e+38" id="VR6-Lm-OZE">
                                         <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
                                             <font key="font" metaFont="smallSystem"/>
                                             <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -42,12 +42,12 @@
                                         </textFieldCell>
                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         <prototypeCellViews>
-                                            <tableCellView identifier="ToDoCell" id="6Si-be-xwS" customClass="ToDoCellView" customModule="MyToDo" customModuleProvider="target">
-                                                <rect key="frame" x="1" y="1" width="477" height="27"/>
+                                            <tableCellView identifier="ToDoCell" focusRingType="none" id="6Si-be-xwS" customClass="ToDoCellView" customModule="MyToDo" customModuleProvider="target">
+                                                <rect key="frame" x="1" y="1" width="277" height="27"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="B99-HM-iP7" userLabel="Task Label">
-                                                        <rect key="frame" x="3" y="5" width="433" height="17"/>
+                                                        <rect key="frame" x="3" y="5" width="233" height="17"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Task" id="nmU-XT-pTp">
                                                             <font key="font" metaFont="system"/>
                                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -55,7 +55,7 @@
                                                         </textFieldCell>
                                                     </textField>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hAb-M0-yeq" userLabel="Timer Label">
-                                                        <rect key="frame" x="437" y="5" width="37" height="17"/>
+                                                        <rect key="frame" x="237" y="5" width="37" height="17"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="33" id="oWa-a8-RvN"/>
                                                         </constraints>
