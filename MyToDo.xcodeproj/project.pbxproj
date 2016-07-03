@@ -17,6 +17,7 @@
 		8E384C621D29673200F96DDE /* TaskData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E384C611D29673200F96DDE /* TaskData.swift */; };
 		8E384C661D297BC000F96DDE /* DataSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E384C651D297BC000F96DDE /* DataSaver.swift */; };
 		8E384C681D297F7100F96DDE /* DefaultsWritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E384C671D297F7100F96DDE /* DefaultsWritable.swift */; };
+		8E384C6A1D29A1FD00F96DDE /* AddToDoCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E384C691D29A1FD00F96DDE /* AddToDoCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		8E384C611D29673200F96DDE /* TaskData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskData.swift; sourceTree = "<group>"; };
 		8E384C651D297BC000F96DDE /* DataSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSaver.swift; sourceTree = "<group>"; };
 		8E384C671D297F7100F96DDE /* DefaultsWritable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsWritable.swift; sourceTree = "<group>"; };
+		8E384C691D29A1FD00F96DDE /* AddToDoCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToDoCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				8E384C5B1D2953B200F96DDE /* ContentsViewController.swift */,
 				8E384C5C1D2953B200F96DDE /* ContentsViewController.xib */,
 				8E384C5F1D29634800F96DDE /* ToDoCellView.swift */,
+				8E384C691D29A1FD00F96DDE /* AddToDoCellView.swift */,
 				8E384C611D29673200F96DDE /* TaskData.swift */,
 				8E384C651D297BC000F96DDE /* DataSaver.swift */,
 				8E384C671D297F7100F96DDE /* DefaultsWritable.swift */,
@@ -215,6 +218,7 @@
 				8E009B5A1D1BFAC7009EDB78 /* AppDelegate.swift in Sources */,
 				8E384C661D297BC000F96DDE /* DataSaver.swift in Sources */,
 				8E384C681D297F7100F96DDE /* DefaultsWritable.swift in Sources */,
+				8E384C6A1D29A1FD00F96DDE /* AddToDoCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

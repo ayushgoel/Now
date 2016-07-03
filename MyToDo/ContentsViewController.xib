@@ -7,6 +7,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="ContentsViewController" customModule="MyToDo" customModuleProvider="target">
             <connections>
+                <outlet property="tasksTableView" destination="CRp-Hq-tQe" id="gF7-hk-GdY"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -87,6 +88,29 @@
                                                     <outlet property="taskNameLabel" destination="B99-HM-iP7" id="sdW-eL-8Mk"/>
                                                     <outlet property="timeLabel" destination="hAb-M0-yeq" id="Smp-DY-eEf"/>
                                                 </connections>
+                                            </tableCellView>
+                                            <tableCellView identifier="AddToDoCellView" focusRingType="none" id="LUy-iy-HqG" customClass="AddToDoCellView" customModule="MyToDo" customModuleProvider="target">
+                                                <rect key="frame" x="1" y="30" width="277" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="USX-32-Q1o">
+                                                        <rect key="frame" x="0.0" y="0.0" width="277" height="22"/>
+                                                        <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="ZIj-yO-j44">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                        <connections>
+                                                            <action selector="didCompleteAddingTask:" target="LUy-iy-HqG" id="CU6-OZ-yno"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="USX-32-Q1o" firstAttribute="leading" secondItem="LUy-iy-HqG" secondAttribute="leading" id="C5o-eS-bVq"/>
+                                                    <constraint firstAttribute="bottom" secondItem="USX-32-Q1o" secondAttribute="bottom" id="bep-GZ-Enk"/>
+                                                    <constraint firstAttribute="trailing" secondItem="USX-32-Q1o" secondAttribute="trailing" id="mJ0-7D-VyG"/>
+                                                    <constraint firstItem="USX-32-Q1o" firstAttribute="top" secondItem="LUy-iy-HqG" secondAttribute="top" id="uOL-Pq-oyN"/>
+                                                </constraints>
                                             </tableCellView>
                                         </prototypeCellViews>
                                     </tableColumn>

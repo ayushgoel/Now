@@ -40,5 +40,6 @@ extension DataSaver {
       task.writableForm()
     }
     saveData(taskDataKey, data: writeableTasks)
+    NSNotificationCenter.defaultCenter().postNotification(NSNotification(name: "TasksUpdated", object: nil))
   }
 }
